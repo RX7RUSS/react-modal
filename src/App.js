@@ -27,16 +27,16 @@ class App extends React.Component {
       modalIsOpen: false
     };
 
-    this.openModal = this.openModal.bind(this);
-    this.afterOpenModal = this.afterOpenModal.bind(this);
+    // this.openModal = this.openModal.bind(this);
+    // this.afterOpenModal = this.afterOpenModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
   }
 
-  openModal() {
+  openModal = () => {
     this.setState({modalIsOpen: true});
   }
 
-  afterOpenModal() {
+  afterOpenModal = () => {
     // references are now sync'd and can be accessed.
     this.subtitle.style.color = '#f00';
   }
